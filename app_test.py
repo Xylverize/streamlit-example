@@ -2,6 +2,14 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+st.set_page_config(
+    page_title="Churn Prediction",
+    page_icon="💼",
+    menu_items={
+        'About': "Xyla Ramadhan batch 13"
+    }
+)
+
 st.header('Churn Prediction P2 M1')
 st.write("""
 Xyla Ramadhan
