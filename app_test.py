@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import joblib
 import pickle
 
 st.header('Churn Prediction P2 M1')
@@ -92,4 +91,4 @@ if prediction[0][1] > 0.5:
 else:
     prediction = 'Not Churn'
 
-st.write(prediction)
+st.header(prediction)
