@@ -4,7 +4,8 @@ import pickle
 
 st.set_page_config(
     page_title="Churn Prediction",
-    page_icon="💡",
+    page_icon="chart_with_upwards_trend",
+    layout="wide",
     menu_items={
         'About': "Xyla Ramadhan batch 13"
     }
@@ -14,7 +15,9 @@ st.header('Churn Prediction P2 M1')
 st.write("""
 Xyla Ramadhan
 """)
-
+st.write("""
+Tabel Data
+""")
 @st.cache
 def fetch_data():
     df = pd.read_csv('https://raw.githubusercontent.com/Xylverize/streamlit-example/master/new_dataset_clean1.csv')
