@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import pickle
 
 st.header('Churn Prediction P2 M1')
 st.write("""
@@ -76,14 +77,16 @@ input = user_input()
 st.subheader('User Input')
 st.write(input)
 
-load_model = joblib.load("preprocessor.pkl")
 
-prediction = load_model.preprocessor(input)
+st.write('Based on user input, the placement model predicted: ')
+st.write(prediction)
+
+pipe = pickle.load(open("preprocessor.pkl", "rb"))
+
+prediction = pipe.predict(input)
 
 if prediction == 1:
     prediction = 'Churn'
 else:
     prediction = 'Not Churn'
 
-st.write('Based on user input, the placement model predicted: ')
-st.write(prediction)
