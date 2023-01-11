@@ -83,7 +83,7 @@ st.write('Based on user input, the placement model predicted: ')
 
 pipe = pickle.load(open("preprocessor.pkl", "rb"))
 
-prediction = pipe.predict(input)
+prediction = pipe.transform(input)
 
 if prediction == 1:
     prediction = 'Churn'
