@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-st.header('FTDS Model Deployment')
+st.header('Churn Prediction P2 M1')
 st.write("""
-Test 
+Xyla Ramadhan
 """)
 
 @st.cache
