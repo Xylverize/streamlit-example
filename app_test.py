@@ -4,7 +4,7 @@ import pickle
 
 st.set_page_config(
     page_title="Churn Prediction",
-    page_icon="💼",
+    page_icon="💡",
     menu_items={
         'About': "Xyla Ramadhan batch 13"
     }
