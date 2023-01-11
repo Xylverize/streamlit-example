@@ -85,7 +85,7 @@ pipe = pickle.load(open("preprocessor.pkl", "rb"))
 
 prediction = pipe.transform(input)
 
-if prediction == [0][0] > 0.5:
+if prediction > 0.5:
     prediction = 'Churn'
 else:
     prediction = 'Not Churn'
