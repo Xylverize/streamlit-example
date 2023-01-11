@@ -78,7 +78,7 @@ st.write(input)
 
 load_model = joblib.load("preprocessor.pkl")
 
-prediction = load_model.predict(input)
+prediction = load_model.preprocessor(input)
 
 if prediction == 1:
     prediction = 'Churn'
